@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @Entity
 @NoArgsConstructor
-@Table(name = "teacher_course")
+@Table(name = "Teacher_Course")
 public class TeacherCourse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,4 +23,7 @@ public class TeacherCourse {
     @ManyToOne
     @JoinColumn(name = "course_id")
     private Course course;
+
+//    @ManyToOne
+//    private Student student;
 }
