@@ -24,7 +24,4 @@ public class University {
 
     @OneToMany(mappedBy = "university")
     List<Teacher> teachers = new ArrayList<>();
-
-    @OneToMany(mappedBy = "university")
-    List<Class> classes = new ArrayList<>();
 }
