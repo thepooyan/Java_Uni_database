@@ -23,7 +23,7 @@ public class Teacher {
 
         @ManyToMany
         @JoinTable(
-                name = "Teacher_Course",
+                name = "Classes",
                 joinColumns = @JoinColumn(name = "teacher_id"),
                 inverseJoinColumns = @JoinColumn(name = "course_id")
         )
