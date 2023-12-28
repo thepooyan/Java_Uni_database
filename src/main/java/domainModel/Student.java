@@ -20,6 +20,6 @@ public class Student {
         private String name;
         private String lastName;
 
-//        @OneToMany(mappedBy = "student")
-//        List<TeacherCourse> teacherCourses = new ArrayList();
+        @ManyToOne
+        University university;
 }

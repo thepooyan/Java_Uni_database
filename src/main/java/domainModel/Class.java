@@ -21,6 +21,6 @@ public class Class {
     @JoinColumn(name = "course_id")
     private Course course;
 
-//    @ManyToOne
-//    private Student student;
+    @ManyToOne
+    University university;
 }
